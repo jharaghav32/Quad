@@ -11,7 +11,7 @@ const CardList = () => {
         return <Loader/>;
     }
   return (
-    <div className='d-flex flex-row flex-wrap gap-2 justify-content-center align-items-center'>
+    <div className='row my-3'>
     {
         response?.map((ele,idx)=>{
             return <Card ele={ele} id = {idx}/>

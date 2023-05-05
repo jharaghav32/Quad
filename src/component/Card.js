@@ -6,7 +6,7 @@ const Card = ({ele,id}) => {
     console.log(id);
   return (
    
-    <div className="card w-25 ">
+    <div className="card col-md-3 ">
   <img src={ele?.show?.image?.medium || defaultimg} style={{"height":'255px'}} className=" card-img-top " alt="..."/>
   <div className="card-body">
     <h5 className="card-title">{ele?.show?.name} <span className="mx-2">{ele?.show?.rating?.average || 5.2}<AiFillStar className='' style={{"color":"yellow"}}/></span></h5>
